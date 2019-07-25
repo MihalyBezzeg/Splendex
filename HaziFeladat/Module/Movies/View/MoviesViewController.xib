@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController" customModule="HaziFeladat" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="dY6-I3-yCc" id="DhS-rp-Kg1"/>
+                <outlet property="searchTextField" destination="iPA-Bu-0ei" id="mj4-iW-lhf"/>
+                <outlet property="tableView" destination="IV3-en-SR4" id="hJC-zG-DoO"/>
+                <outlet property="view" destination="tZt-eb-vvb" id="utp-Qx-nEA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tZt-eb-vvb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for movies" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-Bu-0ei">
+                    <rect key="frame" x="50" y="64" width="264" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GUB-ik-rKJ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IV3-en-SR4">
+                    <rect key="frame" x="0.0" y="164" width="414" height="732"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-I3-yCc">
+                    <rect key="frame" x="314" y="64" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Umu-bW-QKk"/>
+                    </constraints>
+                    <state key="normal" title="Search"/>
+                    <connections>
+                        <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="1dQ-SS-DNy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IV3-en-SR4" firstAttribute="top" secondItem="iPA-Bu-0ei" secondAttribute="bottom" constant="50" id="0gt-gr-sME"/>
+                <constraint firstItem="dY6-I3-yCc" firstAttribute="height" secondItem="iPA-Bu-0ei" secondAttribute="height" id="FSu-67-3iH"/>
+                <constraint firstItem="wwn-dT-a3Z" firstAttribute="trailing" secondItem="IV3-en-SR4" secondAttribute="trailing" id="GFG-zF-eoJ"/>
+                <constraint firstItem="IV3-en-SR4" firstAttribute="leading" secondItem="wwn-dT-a3Z" secondAttribute="leading" id="MJz-1u-eTh"/>
+                <constraint firstAttribute="bottom" secondItem="IV3-en-SR4" secondAttribute="bottom" id="bql-nL-Rlx"/>
+                <constraint firstItem="iPA-Bu-0ei" firstAttribute="leading" secondItem="wwn-dT-a3Z" secondAttribute="leading" constant="50" id="elg-Zn-6KN"/>
+                <constraint firstItem="dY6-I3-yCc" firstAttribute="leading" secondItem="iPA-Bu-0ei" secondAttribute="trailing" id="esh-fD-KkF"/>
+                <constraint firstItem="dY6-I3-yCc" firstAttribute="top" secondItem="wwn-dT-a3Z" secondAttribute="top" constant="20" id="f66-Dk-Ak5"/>
+                <constraint firstItem="wwn-dT-a3Z" firstAttribute="trailing" secondItem="dY6-I3-yCc" secondAttribute="trailing" id="jfU-SA-eEy"/>
+                <constraint firstItem="iPA-Bu-0ei" firstAttribute="top" secondItem="wwn-dT-a3Z" secondAttribute="top" constant="20" id="odZ-vq-b3L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wwn-dT-a3Z"/>
+        </view>
+    </objects>
+</document>

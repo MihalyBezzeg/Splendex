@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06EBCD5480986B98C6C860CD /* Pods_HaziFeladat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6786B6C8BD0FE898EAF0390 /* Pods_HaziFeladat.framework */; };
+		4144503822D9BD55006B7AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144503722D9BD55006B7AC2 /* AppDelegate.swift */; };
+		4144503A22D9BD55006B7AC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144503922D9BD55006B7AC2 /* ViewController.swift */; };
+		4144503F22D9BD56006B7AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4144503E22D9BD56006B7AC2 /* Assets.xcassets */; };
+		4144504222D9BD56006B7AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4144504022D9BD56006B7AC2 /* LaunchScreen.storyboard */; };
+		4144504D22D9BD56006B7AC2 /* HaziFeladatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144504C22D9BD56006B7AC2 /* HaziFeladatTests.swift */; };
+		4144505822D9BD56006B7AC2 /* HaziFeladatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144505722D9BD56006B7AC2 /* HaziFeladatUITests.swift */; };
+		4144506822D9BD8B006B7AC2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144506722D9BD8B006B7AC2 /* UIViewController+Extension.swift */; };
+		4144506C22D9BDAE006B7AC2 /* UINibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144506B22D9BDAE006B7AC2 /* UINibView.swift */; };
+		4144506F22D9BFD5006B7AC2 /* ErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144506E22D9BFD5006B7AC2 /* ErrorProtocol.swift */; };
+		4144507422D9BFEE006B7AC2 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144507222D9BFEE006B7AC2 /* ServerError.swift */; };
+		4144507522D9BFEE006B7AC2 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144507322D9BFEE006B7AC2 /* GenericError.swift */; };
+		4144509D22D9C003006B7AC2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144507F22D9C003006B7AC2 /* Router.swift */; };
+		4144509E22D9C003006B7AC2 /* MoviePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508222D9C003006B7AC2 /* MoviePresenterContract.swift */; };
+		4144509F22D9C003006B7AC2 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508322D9C003006B7AC2 /* MoviePresenter.swift */; };
+		414450A022D9C003006B7AC2 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508622D9C003006B7AC2 /* EmailValidator.swift */; };
+		414450A122D9C003006B7AC2 /* ValidationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508722D9C003006B7AC2 /* ValidationProtocol.swift */; };
+		414450A222D9C003006B7AC2 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508822D9C003006B7AC2 /* PasswordValidator.swift */; };
+		414450A322D9C003006B7AC2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508A22D9C003006B7AC2 /* Movie.swift */; };
+		414450A422D9C003006B7AC2 /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508C22D9C003006B7AC2 /* MovieError.swift */; };
+		414450A522D9C003006B7AC2 /* MovieViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144508E22D9C003006B7AC2 /* MovieViewContract.swift */; };
+		414450A622D9C003006B7AC2 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4144508F22D9C003006B7AC2 /* MoviesViewController.xib */; };
+		414450A922D9C003006B7AC2 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144509322D9C003006B7AC2 /* MoviesViewController.swift */; };
+		414450AA22D9C003006B7AC2 /* MovieProviderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144509522D9C003006B7AC2 /* MovieProviderContract.swift */; };
+		414450AB22D9C003006B7AC2 /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144509622D9C003006B7AC2 /* MovieAPIService.swift */; };
+		414450AC22D9C003006B7AC2 /* MovieProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144509722D9C003006B7AC2 /* MovieProvider.swift */; };
+		414450AF22DA086C006B7AC2 /* BaseConfigurableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414450AE22DA086C006B7AC2 /* BaseConfigurableTableView.swift */; };
+		414450B122DA08A5006B7AC2 /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414450B022DA08A5006B7AC2 /* UITableViewController+Extension.swift */; };
+		414450B322DA08C7006B7AC2 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414450B222DA08C7006B7AC2 /* UITableViewCell+Extension.swift */; };
+		41A3E1E522EA109800BE3BA6 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3E1E422EA109800BE3BA6 /* MovieResult.swift */; };
+		41A3E1E722EA130A00BE3BA6 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A3E1E622EA130A00BE3BA6 /* MovieCell.xib */; };
+		41A3E1E922EA132100BE3BA6 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3E1E822EA132100BE3BA6 /* MovieCell.swift */; };
+		41A3E1EB22EA259100BE3BA6 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A3E1EA22EA259100BE3BA6 /* MovieDetails.swift */; };
+		B386076213ED65536278789B /* Pods_HaziFeladatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5019843F871388AF3113935F /* Pods_HaziFeladatTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4144504922D9BD56006B7AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4144502C22D9BD55006B7AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4144503322D9BD55006B7AC2;
+			remoteInfo = HaziFeladat;
+		};
+		4144505422D9BD56006B7AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4144502C22D9BD55006B7AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4144503322D9BD55006B7AC2;
+			remoteInfo = HaziFeladat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4144503422D9BD55006B7AC2 /* HaziFeladat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaziFeladat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4144503722D9BD55006B7AC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4144503922D9BD55006B7AC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4144503E22D9BD56006B7AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4144504122D9BD56006B7AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4144504322D9BD56006B7AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4144504822D9BD56006B7AC2 /* HaziFeladatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaziFeladatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4144504C22D9BD56006B7AC2 /* HaziFeladatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaziFeladatTests.swift; sourceTree = "<group>"; };
+		4144504E22D9BD56006B7AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4144505322D9BD56006B7AC2 /* HaziFeladatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaziFeladatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4144505722D9BD56006B7AC2 /* HaziFeladatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaziFeladatUITests.swift; sourceTree = "<group>"; };
+		4144505922D9BD56006B7AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4144506722D9BD8B006B7AC2 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4144506B22D9BDAE006B7AC2 /* UINibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINibView.swift; sourceTree = "<group>"; };
+		4144506E22D9BFD5006B7AC2 /* ErrorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorProtocol.swift; sourceTree = "<group>"; };
+		4144507222D9BFEE006B7AC2 /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		4144507322D9BFEE006B7AC2 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		4144507F22D9C003006B7AC2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4144508222D9C003006B7AC2 /* MoviePresenterContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePresenterContract.swift; sourceTree = "<group>"; };
+		4144508322D9C003006B7AC2 /* MoviePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		4144508622D9C003006B7AC2 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		4144508722D9C003006B7AC2 /* ValidationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationProtocol.swift; sourceTree = "<group>"; };
+		4144508822D9C003006B7AC2 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		4144508A22D9C003006B7AC2 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4144508C22D9C003006B7AC2 /* MovieError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
+		4144508E22D9C003006B7AC2 /* MovieViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewContract.swift; sourceTree = "<group>"; };
+		4144508F22D9C003006B7AC2 /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		4144509322D9C003006B7AC2 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		4144509522D9C003006B7AC2 /* MovieProviderContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieProviderContract.swift; sourceTree = "<group>"; };
+		4144509622D9C003006B7AC2 /* MovieAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
+		4144509722D9C003006B7AC2 /* MovieProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieProvider.swift; sourceTree = "<group>"; };
+		414450AE22DA086C006B7AC2 /* BaseConfigurableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConfigurableTableView.swift; sourceTree = "<group>"; };
+		414450B022DA08A5006B7AC2 /* UITableViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extension.swift"; sourceTree = "<group>"; };
+		414450B222DA08C7006B7AC2 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		41A3E1E422EA109800BE3BA6 /* MovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
+		41A3E1E622EA130A00BE3BA6 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		41A3E1E822EA132100BE3BA6 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		41A3E1EA22EA259100BE3BA6 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		470CB3E78C61ED5753F3C6E9 /* Pods-HaziFeladatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaziFeladatTests.release.xcconfig"; path = "Target Support Files/Pods-HaziFeladatTests/Pods-HaziFeladatTests.release.xcconfig"; sourceTree = "<group>"; };
+		5019843F871388AF3113935F /* Pods_HaziFeladatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaziFeladatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5642EBBE1C0338425F336D2A /* Pods-HaziFeladatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaziFeladatTests.debug.xcconfig"; path = "Target Support Files/Pods-HaziFeladatTests/Pods-HaziFeladatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5958517F585088729F1EBA8B /* Pods-HaziFeladat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaziFeladat.release.xcconfig"; path = "Target Support Files/Pods-HaziFeladat/Pods-HaziFeladat.release.xcconfig"; sourceTree = "<group>"; };
+		C1B55D2E19B2B2CFA034365D /* Pods-HaziFeladat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaziFeladat.debug.xcconfig"; path = "Target Support Files/Pods-HaziFeladat/Pods-HaziFeladat.debug.xcconfig"; sourceTree = "<group>"; };
+		D6786B6C8BD0FE898EAF0390 /* Pods_HaziFeladat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaziFeladat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4144503122D9BD55006B7AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EBCD5480986B98C6C860CD /* Pods_HaziFeladat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144504522D9BD56006B7AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B386076213ED65536278789B /* Pods_HaziFeladatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144505022D9BD56006B7AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4144502B22D9BD55006B7AC2 = {
+			isa = PBXGroup;
+			children = (
+				4144503622D9BD55006B7AC2 /* HaziFeladat */,
+				4144504B22D9BD56006B7AC2 /* HaziFeladatTests */,
+				4144505622D9BD56006B7AC2 /* HaziFeladatUITests */,
+				4144503522D9BD55006B7AC2 /* Products */,
+				AA1DA33767966F1F4C7E761A /* Pods */,
+				9748E1A88224BFF0A36617AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4144503522D9BD55006B7AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4144503422D9BD55006B7AC2 /* HaziFeladat.app */,
+				4144504822D9BD56006B7AC2 /* HaziFeladatTests.xctest */,
+				4144505322D9BD56006B7AC2 /* HaziFeladatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4144503622D9BD55006B7AC2 /* HaziFeladat */ = {
+			isa = PBXGroup;
+			children = (
+				414450AD22D9C02B006B7AC2 /* Main */,
+				4144506522D9BD75006B7AC2 /* Helpers */,
+				4144507022D9BFEE006B7AC2 /* Entity */,
+				4144507622D9C003006B7AC2 /* Module */,
+				4144503922D9BD55006B7AC2 /* ViewController.swift */,
+				4144503E22D9BD56006B7AC2 /* Assets.xcassets */,
+				4144504322D9BD56006B7AC2 /* Info.plist */,
+			);
+			path = HaziFeladat;
+			sourceTree = "<group>";
+		};
+		4144504B22D9BD56006B7AC2 /* HaziFeladatTests */ = {
+			isa = PBXGroup;
+			children = (
+				4144504C22D9BD56006B7AC2 /* HaziFeladatTests.swift */,
+				4144504E22D9BD56006B7AC2 /* Info.plist */,
+			);
+			path = HaziFeladatTests;
+			sourceTree = "<group>";
+		};
+		4144505622D9BD56006B7AC2 /* HaziFeladatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4144505722D9BD56006B7AC2 /* HaziFeladatUITests.swift */,
+				4144505922D9BD56006B7AC2 /* Info.plist */,
+			);
+			path = HaziFeladatUITests;
+			sourceTree = "<group>";
+		};
+		4144506522D9BD75006B7AC2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4144506622D9BD7D006B7AC2 /* Extensions */,
+				4144506D22D9BFCD006B7AC2 /* Protocols */,
+				4144506B22D9BDAE006B7AC2 /* UINibView.swift */,
+				414450AE22DA086C006B7AC2 /* BaseConfigurableTableView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4144506622D9BD7D006B7AC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4144506722D9BD8B006B7AC2 /* UIViewController+Extension.swift */,
+				414450B022DA08A5006B7AC2 /* UITableViewController+Extension.swift */,
+				414450B222DA08C7006B7AC2 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4144506D22D9BFCD006B7AC2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4144506E22D9BFD5006B7AC2 /* ErrorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4144507022D9BFEE006B7AC2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4144507122D9BFEE006B7AC2 /* Errors */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4144507122D9BFEE006B7AC2 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				4144507222D9BFEE006B7AC2 /* ServerError.swift */,
+				4144507322D9BFEE006B7AC2 /* GenericError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		4144507622D9C003006B7AC2 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4144508022D9C003006B7AC2 /* Movies */,
+				4144507F22D9C003006B7AC2 /* Router.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4144508022D9C003006B7AC2 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				4144508122D9C003006B7AC2 /* Presenter */,
+				4144508422D9C003006B7AC2 /* Model */,
+				4144508D22D9C003006B7AC2 /* View */,
+				4144509422D9C003006B7AC2 /* Service */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		4144508122D9C003006B7AC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4144508222D9C003006B7AC2 /* MoviePresenterContract.swift */,
+				4144508322D9C003006B7AC2 /* MoviePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4144508422D9C003006B7AC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4144508522D9C003006B7AC2 /* Validator */,
+				4144508922D9C003006B7AC2 /* Movie */,
+				4144508B22D9C003006B7AC2 /* Error */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4144508522D9C003006B7AC2 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				4144508622D9C003006B7AC2 /* EmailValidator.swift */,
+				4144508722D9C003006B7AC2 /* ValidationProtocol.swift */,
+				4144508822D9C003006B7AC2 /* PasswordValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		4144508922D9C003006B7AC2 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				4144508A22D9C003006B7AC2 /* Movie.swift */,
+				41A3E1E422EA109800BE3BA6 /* MovieResult.swift */,
+				41A3E1EA22EA259100BE3BA6 /* MovieDetails.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		4144508B22D9C003006B7AC2 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4144508C22D9C003006B7AC2 /* MovieError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4144508D22D9C003006B7AC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4144508E22D9C003006B7AC2 /* MovieViewContract.swift */,
+				4144508F22D9C003006B7AC2 /* MoviesViewController.xib */,
+				4144509322D9C003006B7AC2 /* MoviesViewController.swift */,
+				41A3E1E622EA130A00BE3BA6 /* MovieCell.xib */,
+				41A3E1E822EA132100BE3BA6 /* MovieCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4144509422D9C003006B7AC2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4144509522D9C003006B7AC2 /* MovieProviderContract.swift */,
+				4144509622D9C003006B7AC2 /* MovieAPIService.swift */,
+				4144509722D9C003006B7AC2 /* MovieProvider.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		414450AD22D9C02B006B7AC2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4144503722D9BD55006B7AC2 /* AppDelegate.swift */,
+				4144504022D9BD56006B7AC2 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9748E1A88224BFF0A36617AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6786B6C8BD0FE898EAF0390 /* Pods_HaziFeladat.framework */,
+				5019843F871388AF3113935F /* Pods_HaziFeladatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1DA33767966F1F4C7E761A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B55D2E19B2B2CFA034365D /* Pods-HaziFeladat.debug.xcconfig */,
+				5958517F585088729F1EBA8B /* Pods-HaziFeladat.release.xcconfig */,
+				5642EBBE1C0338425F336D2A /* Pods-HaziFeladatTests.debug.xcconfig */,
+				470CB3E78C61ED5753F3C6E9 /* Pods-HaziFeladatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4144503322D9BD55006B7AC2 /* HaziFeladat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4144505C22D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladat" */;
+			buildPhases = (
+				30CC265168E78780281CE47F /* [CP] Check Pods Manifest.lock */,
+				4144503022D9BD55006B7AC2 /* Sources */,
+				4144503122D9BD55006B7AC2 /* Frameworks */,
+				4144503222D9BD55006B7AC2 /* Resources */,
+				29BD2AB0A4F526A228D609DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaziFeladat;
+			productName = HaziFeladat;
+			productReference = 4144503422D9BD55006B7AC2 /* HaziFeladat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4144504722D9BD56006B7AC2 /* HaziFeladatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4144505F22D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladatTests" */;
+			buildPhases = (
+				1AB4237C1CA0CEFBCEC115B7 /* [CP] Check Pods Manifest.lock */,
+				4144504422D9BD56006B7AC2 /* Sources */,
+				4144504522D9BD56006B7AC2 /* Frameworks */,
+				4144504622D9BD56006B7AC2 /* Resources */,
+				C6EC7C6DF167CE87140C9C1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4144504A22D9BD56006B7AC2 /* PBXTargetDependency */,
+			);
+			name = HaziFeladatTests;
+			productName = HaziFeladatTests;
+			productReference = 4144504822D9BD56006B7AC2 /* HaziFeladatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4144505222D9BD56006B7AC2 /* HaziFeladatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4144506222D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladatUITests" */;
+			buildPhases = (
+				4144504F22D9BD56006B7AC2 /* Sources */,
+				4144505022D9BD56006B7AC2 /* Frameworks */,
+				4144505122D9BD56006B7AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4144505522D9BD56006B7AC2 /* PBXTargetDependency */,
+			);
+			name = HaziFeladatUITests;
+			productName = HaziFeladatUITests;
+			productReference = 4144505322D9BD56006B7AC2 /* HaziFeladatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4144502C22D9BD55006B7AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Bezzeg Mihály";
+				TargetAttributes = {
+					4144503322D9BD55006B7AC2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4144504722D9BD56006B7AC2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4144503322D9BD55006B7AC2;
+					};
+					4144505222D9BD56006B7AC2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4144503322D9BD55006B7AC2;
+					};
+				};
+			};
+			buildConfigurationList = 4144502F22D9BD55006B7AC2 /* Build configuration list for PBXProject "HaziFeladat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4144502B22D9BD55006B7AC2;
+			productRefGroup = 4144503522D9BD55006B7AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4144503322D9BD55006B7AC2 /* HaziFeladat */,
+				4144504722D9BD56006B7AC2 /* HaziFeladatTests */,
+				4144505222D9BD56006B7AC2 /* HaziFeladatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4144503222D9BD55006B7AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A3E1E722EA130A00BE3BA6 /* MovieCell.xib in Resources */,
+				414450A622D9C003006B7AC2 /* MoviesViewController.xib in Resources */,
+				4144504222D9BD56006B7AC2 /* LaunchScreen.storyboard in Resources */,
+				4144503F22D9BD56006B7AC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144504622D9BD56006B7AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144505122D9BD56006B7AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB4237C1CA0CEFBCEC115B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaziFeladatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29BD2AB0A4F526A228D609DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaziFeladat/Pods-HaziFeladat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaziFeladat/Pods-HaziFeladat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HaziFeladat/Pods-HaziFeladat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30CC265168E78780281CE47F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaziFeladat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EC7C6DF167CE87140C9C1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaziFeladatTests/Pods-HaziFeladatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaziFeladatTests/Pods-HaziFeladatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HaziFeladatTests/Pods-HaziFeladatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4144503022D9BD55006B7AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414450AA22D9C003006B7AC2 /* MovieProviderContract.swift in Sources */,
+				414450A122D9C003006B7AC2 /* ValidationProtocol.swift in Sources */,
+				414450AF22DA086C006B7AC2 /* BaseConfigurableTableView.swift in Sources */,
+				414450AB22D9C003006B7AC2 /* MovieAPIService.swift in Sources */,
+				414450A422D9C003006B7AC2 /* MovieError.swift in Sources */,
+				414450A922D9C003006B7AC2 /* MoviesViewController.swift in Sources */,
+				4144506C22D9BDAE006B7AC2 /* UINibView.swift in Sources */,
+				4144506F22D9BFD5006B7AC2 /* ErrorProtocol.swift in Sources */,
+				4144506822D9BD8B006B7AC2 /* UIViewController+Extension.swift in Sources */,
+				4144507522D9BFEE006B7AC2 /* GenericError.swift in Sources */,
+				414450A222D9C003006B7AC2 /* PasswordValidator.swift in Sources */,
+				41A3E1E522EA109800BE3BA6 /* MovieResult.swift in Sources */,
+				4144503A22D9BD55006B7AC2 /* ViewController.swift in Sources */,
+				4144503822D9BD55006B7AC2 /* AppDelegate.swift in Sources */,
+				41A3E1E922EA132100BE3BA6 /* MovieCell.swift in Sources */,
+				414450AC22D9C003006B7AC2 /* MovieProvider.swift in Sources */,
+				4144509F22D9C003006B7AC2 /* MoviePresenter.swift in Sources */,
+				414450B322DA08C7006B7AC2 /* UITableViewCell+Extension.swift in Sources */,
+				4144507422D9BFEE006B7AC2 /* ServerError.swift in Sources */,
+				4144509E22D9C003006B7AC2 /* MoviePresenterContract.swift in Sources */,
+				41A3E1EB22EA259100BE3BA6 /* MovieDetails.swift in Sources */,
+				414450A022D9C003006B7AC2 /* EmailValidator.swift in Sources */,
+				414450A522D9C003006B7AC2 /* MovieViewContract.swift in Sources */,
+				414450B122DA08A5006B7AC2 /* UITableViewController+Extension.swift in Sources */,
+				4144509D22D9C003006B7AC2 /* Router.swift in Sources */,
+				414450A322D9C003006B7AC2 /* Movie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144504422D9BD56006B7AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4144504D22D9BD56006B7AC2 /* HaziFeladatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4144504F22D9BD56006B7AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4144505822D9BD56006B7AC2 /* HaziFeladatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4144504A22D9BD56006B7AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4144503322D9BD55006B7AC2 /* HaziFeladat */;
+			targetProxy = 4144504922D9BD56006B7AC2 /* PBXContainerItemProxy */;
+		};
+		4144505522D9BD56006B7AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4144503322D9BD55006B7AC2 /* HaziFeladat */;
+			targetProxy = 4144505422D9BD56006B7AC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4144504022D9BD56006B7AC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4144504122D9BD56006B7AC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4144505A22D9BD56006B7AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4144505B22D9BD56006B7AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4144505D22D9BD56006B7AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B55D2E19B2B2CFA034365D /* Pods-HaziFeladat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4144505E22D9BD56006B7AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5958517F585088729F1EBA8B /* Pods-HaziFeladat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4144506022D9BD56006B7AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5642EBBE1C0338425F336D2A /* Pods-HaziFeladatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaziFeladat.app/HaziFeladat";
+			};
+			name = Debug;
+		};
+		4144506122D9BD56006B7AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470CB3E78C61ED5753F3C6E9 /* Pods-HaziFeladatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HaziFeladat.app/HaziFeladat";
+			};
+			name = Release;
+		};
+		4144506322D9BD56006B7AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HaziFeladat;
+			};
+			name = Debug;
+		};
+		4144506422D9BD56006B7AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HaziFeladatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.mihalybezzeg.HaziFeladatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HaziFeladat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4144502F22D9BD55006B7AC2 /* Build configuration list for PBXProject "HaziFeladat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4144505A22D9BD56006B7AC2 /* Debug */,
+				4144505B22D9BD56006B7AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4144505C22D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4144505D22D9BD56006B7AC2 /* Debug */,
+				4144505E22D9BD56006B7AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4144505F22D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4144506022D9BD56006B7AC2 /* Debug */,
+				4144506122D9BD56006B7AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4144506222D9BD56006B7AC2 /* Build configuration list for PBXNativeTarget "HaziFeladatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4144506322D9BD56006B7AC2 /* Debug */,
+				4144506422D9BD56006B7AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4144502C22D9BD55006B7AC2 /* Project object */;
+}
